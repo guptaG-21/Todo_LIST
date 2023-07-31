@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import PageLoad from "./components/PageLoad";
+import Containner from "./components/CategoriesContainner/Containner";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex flex-col items-center'>
+      <div className="top-5 relative">
+        <Containner />
+      </div>
+      <div className='flex md:mt-[5%] mt-[20%] justify-center '>
+        <PageLoad />
+      </div>
     </div>
   );
 }
